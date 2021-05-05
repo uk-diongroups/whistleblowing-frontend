@@ -73,28 +73,28 @@ function Form() {
             </div>
             <div className="p-3">
               <div className="form-group">
-                <label htmlFor="name">Your Name:</label>
+                <label htmlFor="name">Your Name: <i class="text-muted">optional</i></label>
                 <input type="text" onChange={(e)=>handle(e)} className="form-control" id="name" value={ data.name } placeholder="" />
               </div>
               <div className="form-group">
-                <label htmlFor="email">Your Email Address</label>
+                <label htmlFor="email">Your Email Address: <i class="text-muted">optional</i></label>
                 <input type="email" onChange={(e)=>handle(e)} className="form-control" id="email" value={ data.email }  placeholder="" />
               </div>
               <div className="form-group">
-                <label htmlFor="phone">Phone </label>
+                <label htmlFor="phone">Phone: <i class="text-muted">optional</i> </label>
                 <input type="tel" onChange={(e)=>handle(e)} className="form-control" id="phone" value={ data.phone }  placeholder="" />
               </div>
               <div className="form-group">
                 <label htmlFor="offender">Name of Offender:</label>
-                <input type="text" onChange={(e)=>handle(e)} className="form-control" id="offender" value={ data.offender } placeholder="" />
+                <input type="text" onChange={(e)=>handle(e)} className="form-control" id="offender" value={ data.offender } placeholder="" required/>
               </div>
               <div className="form-group">
-                <label htmlfor="report">Nature of Conduct</label>
-                <textarea onChange={(e)=>handle(e)} className="form-control" id="report" value={ data.report }  rows="3"></textarea>
+                <label htmlfor="report">Nature of Conduct:</label>
+                <textarea onChange={(e)=>handle(e)} className="form-control" id="report" value={ data.report }  rows="3" required></textarea>
               </div>
               <div className="form-group">
-                <label htmlfor="extra">What can we do differently</label>
-                <textarea onChange={(e)=>handle(e)} className="form-control" id="extra" value={ data.extra }  rows="3"></textarea>
+                <label htmlfor="extra">What can we do differently:</label>
+                <textarea onChange={(e)=>handle(e)} className="form-control" id="extra" value={ data.extra }  rows="3" required></textarea>
               </div>
             </div>
             <div className="text-center py-3">

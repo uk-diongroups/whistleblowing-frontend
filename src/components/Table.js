@@ -18,7 +18,7 @@ const Table = () => {
 
 
     return (
-        <div className="col-lg-9 mx-auto">
+        <div className="col-lg-12 mx-auto">
             <h4 className="my-4">WhistleBlower Table</h4>
             <table class="table table-striped table-dark">
                 <thead>
@@ -27,8 +27,10 @@ const Table = () => {
                         <th scope="col">Name</th>
                         <th scope="col">Email</th>
                         <th scope="col">Phone</th>
-                        <th scope="col">Report</th>
-                        <th scope="col">What we can do seperately</th>
+                        <th scope="col">Offender</th>
+                        <th scope="col">Conduct</th>
+                        <th scope="col">What we can do differently</th>
+                        <th scope="col">Date</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -42,6 +44,7 @@ const Table = () => {
                                 <td>{item.offender}</td>
                                 <td>{item.report}</td>
                                 <td>{item.extra}</td>
+                                <td>{item.created_at}</td>
                             </tr>
                         ))
                     }
